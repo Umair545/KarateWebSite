@@ -1,0 +1,51 @@
+extends base.pug
+
+
+block scripts
+    script
+      include ../static/index.js    
+
+block style
+    style
+        include ../static/styles.css
+
+
+block content
+    section#introSection
+        div Welcome to Karate World
+        div.small Clear your mind !  ... Peace In..
+
+    section#MissionSection 
+        h2 Our Mission
+        div.cardcontainer
+            div.card
+                h3  Shàolín gōngfu
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.jpg")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, similique.
+            div.card
+                h3  Tàijí quán. Tai Chi Quan
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/3.jfif")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, similique.
+            div.card
+                h3  Zuì quán. Drunken Master
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/4.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, similique.
+            
+    section#SponsorsSection 
+        h2 Our Sponsors 
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage")
+    
+ 
